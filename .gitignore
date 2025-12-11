@@ -1,2 +1,8 @@
 a.out
 main
+*.gcda
+*.gcno
+*.gcov
+main_test
+chapter2/html
+chapter2/latex

@@ -1,0 +1,20 @@
+# home directories are disabled: https://github.com/clangd/clangd/issues/1827
+CompileFlags:
+  Add:
+    - -xc
+    - -std=c11
+
+    # - -L$HOME/opt/share/lib
+    # - -I$HOME/opt/share/include
+    - -I/usr/include/glib-2.0
+    - -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+    
+    # Link flags
+    - -lglib-2.0
+    # - -lgslcblas 
+    - -lm
+    # - -Wl,-R$HOME/opt/share/lib
+    
+Diagnostics:
+  UnusedIncludes: None
+  MissingIncludes: None
